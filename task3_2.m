@@ -5,10 +5,10 @@ mocapData = load('mocapPoints3D.mat');
 pts3D = mocapData.pts3D;
 
 % Loading camera parameters
-v1Data = load('Parameters_V1.mat');
+v1Data = load('Parameters_V1_1.mat');
 paramsV1 = v1Data.Parameters;
 
-v2Data = load('Parameters_V2.mat');
+v2Data = load('Parameters_V2_1.mat');
 paramsV2 = v2Data.Parameters;
 
 im1 = imread('im1corrected.jpg');
