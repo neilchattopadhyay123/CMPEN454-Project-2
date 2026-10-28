@@ -144,7 +144,6 @@ camera3D = points3D(:, 9);
 
 % wall plane equations
 % aX + bY + cZ + d = 0
-
 floorPlane = fitPlane(floor3D);
 wallPlane = fitPlane(wall3D);
 
@@ -163,7 +162,6 @@ fprintf('%.6f X + %.6f Y + %.6f Z + %.3f = 0\n\n', ...
 
 
 % doorway and head heights in meters
-
 doorHeight = door3D(3);
 headHeight = head3D(3);
 
@@ -172,11 +170,8 @@ fprintf('Doorway height: %.1f mm = %.3f m\n', doorHeight, doorHeight / 1000);
 fprintf('Head height: %.1f mm = %.3f m\n', headHeight, headHeight / 1000);
 
 
-
 % camera location 
-
 fprintf('Tripod camera location: (%.1f, %.1f, %.1f) mm\n', camera3D);
-
 
 % plotting in 3D
 figure;
@@ -187,7 +182,7 @@ grid on;
 plot3(floor3D(1, :), floor3D(2, :), floor3D(3, :), 'bo', 'MarkerSize', 8);
 
 % wall points: black squares
-plot3(wall3D(1, :), wall3D(2, :), wall3D(3, :), 'ks', 'MarkerSize', 8);
+plot3(wall3D(1, :), wall3D(2, :), wall3D(3, :), 'wo', 'MarkerSize', 8);
 
 % doorway top: magenta circle
 plot3(door3D(1), door3D(2), door3D(3), 'mo', 'MarkerSize', 8);
