@@ -5,10 +5,10 @@ clear; close all; clc;
 % F'*x2 gives a line in image 1
 
 % load camera parameters
-v1Data = load('Parameters_V1_1.mat');
+v1Data = load('Project2DataFiles/Parameters_V1_1.mat');
 paramsV1 = v1Data.Parameters;
 
-v2Data = load('Parameters_V2_1.mat');
+v2Data = load('Project2DataFiles/Parameters_V2_1.mat');
 paramsV2 = v2Data.Parameters;
 
 % intrinsic matrices
@@ -98,8 +98,8 @@ fprintf('Max absolute epipolar residual (Image 2): %.6e\n', max(abs(r2)));
 fprintf('Max absolute epipolar residual (Image 1): %.6e\n', max(abs(r1)));
 
 % load images
-im1 = imread('im1corrected.jpg');
-im2 = imread('im2corrected.jpg');
+im1 = imread('Project2DataFiles/im1corrected.jpg');
+im2 = imread('Project2DataFiles/im2corrected.jpg');
 
 pointIDs = [1, 6, 17, 24, 31, 38];
 pointIDs = pointIDs(pointIDs <= numPoints);

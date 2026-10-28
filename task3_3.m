@@ -1,7 +1,7 @@
 clear; close all; clc;
 
 % Load ground truth 3D points
-mocapData = load('mocapPoints3D.mat');
+mocapData = load('Project2DataFiles/mocapPoints3D.mat');
 pts3D_gt = mocapData.pts3D;
 
 % Load projected 2D coordinates
@@ -10,9 +10,9 @@ pts2D_V1 = mocap2D.pts2D_V1;
 pts2D_V2 = mocap2D.pts2D_V2;
 
 % Load camera parameters
-v1Data = load('Parameters_V1_1.mat');
+v1Data = load('Project2DataFiles/Parameters_V1_1.mat');
 paramsV1 = v1Data.Parameters;
-v2Data = load('Parameters_V2_1.mat');
+v2Data = load('Project2DataFiles/Parameters_V2_1.mat');
 paramsV2 = v2Data.Parameters;
 
 % Run triangulation

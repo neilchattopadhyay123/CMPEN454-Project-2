@@ -1,18 +1,18 @@
 clear; close all; clc;
 
 % Load 3D points
-mocapData = load('mocapPoints3D.mat');
+mocapData = load('Project2DataFiles/mocapPoints3D.mat');
 pts3D = mocapData.pts3D;
 
 % Loading camera parameters
-v1Data = load('Parameters_V1_1.mat');
+v1Data = load('Project2DataFiles/Parameters_V1_1.mat');
 paramsV1 = v1Data.Parameters;
 
-v2Data = load('Parameters_V2_1.mat');
+v2Data = load('Project2DataFiles/Parameters_V2_1.mat');
 paramsV2 = v2Data.Parameters;
 
-im1 = imread('im1corrected.jpg');
-im2 = imread('im2corrected.jpg');
+im1 = imread('Project2DataFiles/im1corrected.jpg');
+im2 = imread('Project2DataFiles/im2corrected.jpg');
 
 % Project points
 pts2D_V1 = projectPoints(pts3D, paramsV1.Kmat, paramsV1.Pmat);

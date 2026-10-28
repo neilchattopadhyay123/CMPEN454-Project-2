@@ -8,14 +8,14 @@ clear; close all; clc;
 
 
 % use files we uploaded
-v1Data = load('Parameters_V1_1.mat');
+v1Data = load('Project2DataFiles/Parameters_V1_1.mat');
 paramsV1 = v1Data.Parameters;
 
-v2Data = load('Parameters_V2_1.mat');
+v2Data = load('Project2DataFiles/Parameters_V2_1.mat');
 paramsV2 = v2Data.Parameters;
 
-im1 = imread('im1corrected.jpg');
-im2 = imread('im2corrected.jpg');
+im1 = imread('Project2DataFiles/im1corrected.jpg');
+im2 = imread('Project2DataFiles/im2corrected.jpg');
 
 % Points 1-3: floor
 % Points 4-6: striped wall
@@ -49,8 +49,8 @@ title('View 2')
 % isfile --> checks saved selections file 
 %   selectedPoints = true
 %   The file exists
-if selectedPoints && isfile('selectedPoints3_4.mat')
-    load('selectedPoints3_4.mat', 'points1', 'points2');
+if selectedPoints && isfile('Project2DataFiles/selectedPoints3_4.mat')
+    load('Project2DataFiles/selectedPoints3_4.mat', 'points1', 'points2');
 
     % Check if saved points matches
     % checks matrix u x v with 9 columns, 1 for each feature

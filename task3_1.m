@@ -1,6 +1,6 @@
 clear; clc;
 
-files = {'Parameters_V1_1.mat', 'Parameters_V2_1.mat'};
+files = {'Project2DataFiles/Parameters_V1_1.mat', 'Project2DataFiles/Parameters_V2_1.mat'};
 
 for i = 1:length(files)
     fprintf('Checking file %d\n', i);
