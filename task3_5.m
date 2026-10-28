@@ -102,7 +102,6 @@ im2 = imread('im2corrected.jpg');
 
 pointIDs = [1, 6, 17, 24, 31, 38];
 pointIDs = pointIDs(pointIDs <= numPoints);
-
 colors = lines(length(pointIDs));
 
 % epipolar lines in View 1
