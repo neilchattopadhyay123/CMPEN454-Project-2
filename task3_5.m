@@ -60,6 +60,7 @@ if F(3, 3) < 0
     F = -F;
 end
 
+format long e;
 fprintf('Essential matrix E:\n');
 disp(E);
 
