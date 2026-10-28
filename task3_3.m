@@ -10,9 +10,9 @@ pts2D_V1 = mocap2D.pts2D_V1;
 pts2D_V2 = mocap2D.pts2D_V2;
 
 % Load camera parameters
-v1Data = load('Parameters_V1.mat');
+v1Data = load('Parameters_V1_1.mat');
 paramsV1 = v1Data.Parameters;
-v2Data = load('Parameters_V2.mat');
+v2Data = load('Parameters_V2_1.mat');
 paramsV2 = v2Data.Parameters;
 
 % Run triangulation
